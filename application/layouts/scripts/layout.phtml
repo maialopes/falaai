@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="<?= $this->baseUrl('/bootstrap/css/bootstrap-responsive.css'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?= $this->baseUrl('/bootstrap/css/bootstrap-responsive.mincss'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?= $this->baseUrl('/bootstrap/css/bootstrap.css'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?= $this->baseUrl('/bootstrap/css/bootstrap.min.css'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?= $this->baseUrl('mlx.css'); ?>" type="text/css" media="screen" />
+
+        <script src="<?= $this->baseUrl('bootstrap/js/bootstrap.js'); ?>"></script>
+        <script src="<?= $this->baseUrl('bootstrap/js/bootstrap.min.js'); ?>"></script>
+        <script src="<?= $this->baseUrl('bootstrap/js/sad.js'); ?>"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.dropdown-toggle').dropdown();
+            });
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Noticias</title>
+    </head>
+    <body style="background-color: #f7f7f7">
+
+        <div class="conteudo">
+
+            <div class="logomarca">
+                <h1><img src="<?=$this->baseUrl('bootstrap/img/speaker_volume_loud.png'); ?>">
+                    falaAí
+                </h1>
+            </div>
+            <button style="margin-top: 30px;margin-left: 13px;" class="btn btn-success" type="button">Universidades</button>
+            <button style="margin-top: 30px;margin-left: 7px;" class="btn btn-primary" type="button">Cidades</button>
+            <button style="margin-top: 30px;margin-left: 7px;" class="btn btn-warning" type="button">Politica</button>
+            <button style="margin-top: 30px;margin-left: 7px;" class="btn btn-inverse" type="button">Acadêmico</button>
+            <button style="margin-top: 30px;margin-left: 7px;" class="btn btn-info" type="button">Entretenimento</button>
+            <button style="margin-top: 30px;margin-left: 7px;" class="btn btn-danger" type="button">Outros</button>
+
+
+            <div class="ambiente_identificacao">
+                <form style="margin-top: 10px;" class="form-inline">
+                    <input type="text" class="input-small" placeholder="Email">
+                    <input type="password" class="input-small" placeholder="Senha">
+                    <button type="submit" class="btn">Acessar</button>
+                </form>  
+                <div  style="color: #0081c2;font-size: 14px;margin-top: -15px;">Deseja inserir uma noticia? <div style="margin-left: -10px"   class="btn btn-link"><a href="<?=$this->baseUrl('/usuario/cadastro')?>">Cadastre-se</a></div></div>
+            </div>
+             
+             <?php echo $this->layout()->content; ?>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
