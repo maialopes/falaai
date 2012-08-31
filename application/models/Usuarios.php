@@ -5,7 +5,16 @@ class Application_Model_Usuarios extends Zend_Db_Table_Row_Abstract
 {
  
   
-  public function getId_usuario() {
+  
+  public function getSenha() {
+      return $this->senha;
+  }
+
+  public function setSenha($senha) {
+      $this->senha = $senha;
+  }
+
+    public function getId_usuario() {
       return $this->id_usuario;
   }
 

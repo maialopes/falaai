@@ -39,6 +39,7 @@ class Application_Form_Usuario extends Zend_Form
         $element = new Zend_Form_Element_Text('data_nascimento');
         $element->setAttrib('class', 'input-large')
                  ->setAttrib('placeholder', 'Informe sua data de nascimento')
+                ->setAttrib('OnKeyUp','mascaraData(this);' )
                 ->setAttrib('style', 'margin-left: 130px;')      
                 ->addValidator(new Zend_Validate_Date(array('locale' => 'pt_BR')))
                 ->setRequired(true)

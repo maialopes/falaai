@@ -13,6 +13,7 @@ class Application_Model_DbTable_Usuarios extends Zend_Db_Table_Abstract
        $persistenteDeusuario->setEmail($dados['email']);
        $persistenteDeusuario->setData_nascimento($dados['data_nascimento']);
        $persistenteDeusuario->setSexo($dados['sexo']);
+       $persistenteDeusuario->setSenha($dados['senha']);
        
        $persistenteDeusuario->save();
     }
@@ -33,6 +34,7 @@ class Application_Model_DbTable_Usuarios extends Zend_Db_Table_Abstract
        $persistenteDeusuario->setEmail($dados['email']);
        $persistenteDeusuario->setData_nascimento($dados['data_nascimento']);
        $persistenteDeusuario->setSexo($dados['sexo']);
+        $persistenteDeusuario->setSenha($dados['senha']);
        
        $persistenteDeusuario->save();
        
