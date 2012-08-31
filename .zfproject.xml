@@ -21,6 +21,7 @@
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Usuario"/>
+        <formFile formName="Noticia"/>
       </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>

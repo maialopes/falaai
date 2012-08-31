@@ -49,4 +49,17 @@
     margin-left: 5px;
 }
 
+.foto{
+    width: 210px;
+    height: 180px;
+    background-color: silver;
+    border: 1px solid slategray;
+}
 
+.nomeUsuario{
+    width: 500px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 300px;
+    
+}
