@@ -10,7 +10,7 @@ class Application_Form_Noticia extends Zend_Form
         $element->setAttrib('class', 'input-xxlarge')
                 ->setAttrib('placeholder', 'Informe o titulo de sua noticia')
                 ->setRequired(true)
-                 ->addValidator(new Zend_Validate_StringLength(array ('max' => 30))) 
+                 ->addValidator(new Zend_Validate_StringLength(array ('max' => 100))) 
                 ->setAllowEmpty(false);
         
         $this->addElement($element);
@@ -25,11 +25,12 @@ class Application_Form_Noticia extends Zend_Form
        ));
          $this->addElement($element);
          
-         $element = new Zend_Form_Element_File('file');
+         $element = new Zend_Form_Element_File('caminho_foto');
         //$element->setDestination(MEDIA_PATH);
         $element->addValidator('Count', false, 1);
         $element->addValidator('Extension', false, 'jpg,png,gif')
-                ->setDescription("Envie uma foto para a notícia se disponível. Formatos permitidos: jpg, png e gif.");
+                        ->setDestination(MEDIA_PATH)
+                        ->setDescription("Envie uma foto para a notícia se disponível. Formatos permitidos: jpg, png e gif.");
         $this->addElement($element);
         
             $element = new Zend_Form_Element_Textarea('descricao');
